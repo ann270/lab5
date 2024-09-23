@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шелкович_А.В._ІК-22</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Форма для заповнення</h2>
+        <form id="dataForm">
+          <input type="text" id="name" class="input-field" placeholder="ПІБ" />
+          <span id="nameError" class="error-message"
+            >Формат: Прізвище І.Б.</span
+          >
+          <input
+            type="text"
+            id="group"
+            class="input-field"
+            placeholder="Група"
+          />
+          <span id="groupError" class="error-message">Формат: АБ-12</span>
+          <input
+            type="text"
+            id="idCard"
+            class="input-field"
+            placeholder="ID-card"
+          />
+          <span id="idCardError" class="error-message"
+            >Формат: АБ №12345678</span
+          >
+          <input
+            type="date"
+            id="birthDate"
+            class="input-field"
+            placeholder="Дата народження"
+          />
+          <span id="birthDateError" class="error-message">Оберіть дату</span>
+          <input
+            type="text"
+            id="email"
+            class="input-field"
+            placeholder="Пошта"
+          />
+          <span id="emailError" class="error-message"
+            >Формат: example@mail.com</span
+          >
+          <button type="button" onclick="validateForm()">Підтвердити</button>
+        </form>
+      </div>
+      <div class="data-container">
+        <h2>Введені дані</h2>
+        <p id="outputName">ПІБ:</p>
+        <p id="outputGroup">Група:</p>
+        <p id="outputIdCard">ID-card:</p>
+        <p id="outputBirthDate">Дата народження:</p>
+        <p id="outputEmail">Пошта:</p>
+      </div>
+      <div class="table-container">
+        <h2>Таблиця</h2>
+        <table id="colorTable"></table>
+        <label for="colorPicker">Оберіть колір:</label>
+        <input type="color" id="colorPicker" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
